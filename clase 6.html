@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 5</title>
+    <title>Clase 6</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -29,12 +29,39 @@
         <h1>Github</h1>
         <img src="img/github.png" alt="Repositorio del curso en Github">
         <ul>
-            <li><a href="https://github.com/
-                manuelfernandezdg/77992" target="_blank">Repo del curso</a></li>
-                <li><a href="" target="_blank">ver pagina online</a></li>
+            <li><a href="https://github.com/odin-70/77992" target="_blank">Repo del curso</a></li>
+            <li><a href="https://odin-70.github.io/77992/" target="_blank">ver pagina online</a></li>
         </ul>
-
     </section>
+    <section>
+        <h1>Formularios</h1>
+        <form action="">
+            <h2>Nuevo Usuario</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="¿Cual es tu Nombre?">
+            <span>Mensaje de Estado</span>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="¿Cual es tu Apellido?">
+            <span>Mensaje de Estado</span>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@dominio.com">
+            <span>Mensaje de Estado</span>
+
+            <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Elige tu contraseña" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)" required>
+            <span>Mensaje de Estado</span>
+
+            <label> ¿Te gustaría recibir novedades por email?
+                <input type="radio" name="newsletter" value="newsletter-si" checked> Si
+                <input type="radio" name="newsletter" value="newsletter-no"> No
+            </label>
+
+            <button>Enviar</button>
+        </form>
+    </section>
+
      </main>
    <footer>
     <h1>Sobre nuestro curso</h1>
